@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.youtubetranscriptapi/youtube",
+  "title": "YouTubeTranscriptAPI",
+  "description": "YouTube transcripts, search, and channel and playlist listings for any AI app. Hosted.",
+  "version": "1.0.0",
+  "websiteUrl": "https://youtubetranscriptapi.com/youtube-mcp-server?ref=mcp-registry",
+  "icons": [
+    {
+      "src": "https://youtubetranscriptapi.com/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://youtubetranscriptapi.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://youtubetranscriptapi.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer tk_live_… API key from youtubetranscriptapi.com/dashboard/keys. Clients that support OAuth can sign in instead.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
